@@ -1,2 +1,2 @@
-# [rusume](alivedd.github.io/alivedd/)
+# [rusume](http://alivedd.github.io/alivedd/)
 

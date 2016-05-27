@@ -7,6 +7,40 @@
 
 @import 'jeet'
 
+@keyframes color-pulse-1
+    0%, 100%
+        background: #6F382A
+    16.666666667%
+        background: #574615
+    33.333333334%
+        background: #2E4F28
+    50.000000001%
+        background: #023935
+    66.666666668%
+        background: #324961
+    83.333333335%
+        background: #613A51
+
+@keyframes color-pulse-2
+    0%, 100%
+        color: #EF9676
+        border-bottom: 2px solid fade-out(#EF9676, 0.62)
+    16.666666667%
+        color: #D0B33F
+        border-bottom: 2px solid fade-out(#D0B33F, 0.62)
+    33.333333334%
+        color: #80C372
+        border-bottom: 2px solid fade-out(#80C372, 0.62)
+    50.000000001%
+        color: #09C8BE
+        border-bottom: 2px solid fade-out(#09C8BE, 0.62)
+    66.666666668%
+        color: #89B8DE
+        border-bottom: 2px solid fade-out(#89B8DE, 0.62)
+    83.333333335%
+        color: #DE9BC6
+        border-bottom: 2px solid fade-out(#DE9BC6, 0.62)
+
 *
     cursor: default
     box-sizing: border-box
@@ -16,6 +50,7 @@ html
     font-weight: 400
     color: #ffffff
     background: #6F382A
+    animation: color-pulse-1 180s linear infinite
     ::selection
         background-color: #000000
 
@@ -27,6 +62,7 @@ a
     color: #EF9676
     text-decoration: none
     border-bottom: 2px solid fade-out(#EF9676, 0.62)
+    animation: color-pulse-2 180s linear infinite
 
 ul
     list-style-type: none
@@ -43,12 +79,18 @@ ul
     background: fade-out(#000000, 0.85)
     margin-bottom: 2em
     border-radius: 1px
-    transition: all 1.4s ease
+    transition: all 3s ease
     &:hover
         background: fade-out(#000000, 0.62)
         transition: background 0.15s ease
     &__content
-        padding: 0.618em 1.618em
+        padding: 1em 1.618em
+
+.expertise
+    &__cols
+        padding-bottom: 1em
+        margin-bottom: 1em
+        border-bottom: 2px solid fade-out(#ffffff, 0.85)
 
 .cf
     +cf

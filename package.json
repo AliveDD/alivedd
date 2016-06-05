@@ -1,16 +1,19 @@
 {
-    "name": "default",
-    "version": "0.5.0",
-    "description" : "The repository what helps to create the initial web-frontend-project structure",
-    "dependencies": {
-        "autoprefixer": "^6.3.3",
-        "browser-sync": "^2.11.1",
-        "css-mqpacker": "^4.0.0",
-        "csswring": "^4.2.1",
-        "gulp": "^3.9.1",
-        "gulp-postcss": "^6.1.0",
-        "gulp-sass": "^2.2.0",
-        "node-jeet-sass": "^0.1.5",
-        "node-normalize-scss": "^1.1.1"
-    }
+  "name": "default",
+  "version": "0.5.0",
+  "description": "The repository what helps to create the initial web-frontend-project structure",
+  "dependencies": {
+    "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.11.1",
+    "css-mqpacker": "^4.0.0",
+    "csswring": "^4.2.1",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sass": "^2.2.0",
+    "node-jeet-sass": "^0.1.5",
+    "node-normalize-scss": "^1.1.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }

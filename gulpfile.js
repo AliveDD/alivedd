@@ -1,40 +1,40 @@
 'use strict';
 
-const gulp = require('gulp');
-const browserSync = require('browser-sync').create();
+var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
 
 // production
-// const gzip = require('gulp-gzip');
-// const runSequence = require('run-sequence');
+// var gzip = require('gulp-gzip');
+// var runSequence = require('run-sequence');
 
 // angular
-// const templateCache = require('gulp-angular-templatecache');
-// const ngAnnotate = require('gulp-ng-annotate');
+// var templateCache = require('gulp-angular-templatecache');
+// var ngAnnotate = require('gulp-ng-annotate');
 
 // scripts
-// const concat = require('gulp-concat');
-// const uglify = require('gulp-uglify');
+// var concat = require('gulp-concat');
+// var uglify = require('gulp-uglify');
 
 // styles
-const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
-const mqpacker = require('css-mqpacker');
-const csswring = require('csswring');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var mqpacker = require('css-mqpacker');
+var csswring = require('csswring');
 
-const jeet = require('node-jeet-sass').includePaths;
-const normalize = require('node-normalize-scss').includePaths
-const sass = require('gulp-sass');
+var jeet = require('node-jeet-sass').includePaths;
+var normalize = require('node-normalize-scss').includePaths
+var sass = require('gulp-sass');
 
 
 
 
 
 // paths
-const Root = './';
-const appRoot = Root + 'app/';
-//const staticRoot = 'static/';
+var Root = './';
+var appRoot = Root + 'app/';
+//var staticRoot = 'static/';
 
-const config = {
+var config = {
     'dist': {
         'root': Root
     },
@@ -98,7 +98,7 @@ const config = {
 
 
 gulp.task('styles', function() {
-    const processors = [
+    var processors = [
         autoprefixer({browsers: ['last 3 versions', '> 1%', 'ie 9']}),
         mqpacker({
             sort: true

@@ -1,4 +1,82 @@
-@import 'jeet'
+*, *:after, *:before
+    box-sizing: border-box
+
+html, body
+    height: 100%
+    padding: 0
+    margin: 0
+    overflow: hidden
+
+html
+    color: #ffffff
+    animation: color-pulse-1 90s linear infinite
+
+    font: 1.618vw/1.618em 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+    font-weight: 400
+    background: #6F382A
+    ::selection
+        background-color: #000000
+
+p, h1, h2, h3, h4, h5, h6
+    margin: 0
+    font: inherit
+
+a
+    color: #EF9676
+    animation: color-pulse-2 90s linear infinite
+    cursor: default
+    &:hover
+        background: #000000
+        position: relative
+        left: -8px
+        border-radius: 2px
+        padding: 4px 8px
+    .external-link
+        cursor: pointer !important
+        margin-bottom: 1em
+
+
+.main-href
+    border: 0.618em solid
+    animation: color-pulse-2 90s linear infinite
+    text-decoration: none
+    display: block
+    height: 100%
+    width: calc(100% - 100%/1.618)
+    float: right
+    position: relative
+    padding: 1vh 1vw
+
+h1
+    font-weight: 600
+    position: absolute
+    animation: color-pulse-2 90s linear infinite
+    display: block
+    top: 30%
+    right: calc(50% - 38%)
+    font: 8em/1.618em 'Mirta', 'Georgia', serif
+
+
+.web-speed
+    float: left
+    width: calc(100%/1.618)
+    height: 100%
+    padding: 2em 2em
+    h2
+        margin-bottom: 1em
+        display: inline-block
+
+ul
+    list-style: none
+    margin: 0
+    display: block
+    width: 100%
+    user-select: none
+    padding: 0
+    li
+        user-select: text
+        display: inline-block
+
 
 @keyframes color-pulse-1
     0%, 100%
@@ -27,43 +105,3 @@
         color: #89B8DE
     83.333333335%
         color: #DE9BC6
-
-*
-    cursor: default
-    box-sizing: border-box
-
-html, body
-    height: 100%
-    padding: 0
-    margin: 0
-    overflow: none
-
-html
-    font: 18px/1.618em 'Mirta', 'Georgia', serif
-    font-weight: 400
-    color: #ffffff
-    background: #6F382A
-    animation: color-pulse-1 90s linear infinite
-    ::selection
-        background-color: #000000
-
-p, h1, h2, h3, h4, h5, h6
-    margin: 0
-    font: inherit
-
-a
-    color: #EF9676
-    text-decoration: none
-    animation: color-pulse-2 90s linear infinite
-    display: block
-    border: 0.618em solid
-    height: 100%
-
-h1
-    font-size: 10em
-    margin-top: 0.1em
-    font-weight: 600
-    +align(both)
-
-.hidden
-    display: none

@@ -22,16 +22,14 @@ html, body
 
 html
   animation: background-pulse 90s linear infinite
-  font-size: 1.618vw
-  font-weight: 400
   background: #6F382A
+  +font(16px, #{$phi}em, $serif-stack)
   ::selection
     background-color: #000000
 
 body
   animation: color-pulse 90s linear infinite
   border: 0.618em solid
-  padding: 7vh 5vw
 
 
 // typography
@@ -62,6 +60,7 @@ a
   border-radius: 2px
   left: -0.5em
   text-decoration: none
+  display: inline-block
   &:hover
     background: black
 

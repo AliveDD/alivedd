@@ -1,3 +1,16 @@
+$sans-serif-stack: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+$serif-stack: 'Mirta', 'Georgia', 'Times New Roman', serif
+
+$phi: 1.618 // φ, golden section
+$mini-phi: 0.618 // inverted golden section
+
+
+=font($font-size: 1rem, $line-height:$phi , $font-stack: $sans-serif-stack)
+  font-size: $font-size
+  line-height: $line-height
+  font-family: $font-stack
+
+
 *, *:after, *:before
   box-sizing: border-box
 
@@ -9,7 +22,7 @@ html, body
 
 html
   animation: background-pulse 90s linear infinite
-  font: 2vw/1.618em 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+  font-size: 1.618vw
   font-weight: 400
   background: #6F382A
   ::selection
@@ -25,17 +38,23 @@ body
 
 p, h1, h2, h3, h4, h5, h6
   margin: 0
+  color: white
   font: inherit
 
+
 h1
-  font: 3em/1.618em 'Mirta', 'Georgia', 'Times New Roman', serif
+  +font(3.4854rem, #{$phi}em, $serif-stack)
+  animation: color-pulse 90s linear infinite
   font-weight: 600
   margin-bottom: 0.618em
 
+
 h2
-  color: white
+  +font(2.3236rem, #{$phi}em, $serif-stack)
+  margin-bottom: 0.618em
 
 a
+  +font(1rem, #{$phi}em, $sans-serif-stack)
   color: #ffffff
   animation: color-pulse 90s linear infinite
   padding: 0.20em 0.5em 0.25em
@@ -48,7 +67,9 @@ a
 
 
 ul
+  +font(1rem, #{$phi}em, $sans-serif-stack)
   list-style: none
   padding: 0
+  margin: 0
   li
     margin-bottom: 0.1em

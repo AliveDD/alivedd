@@ -1,111 +1,33 @@
-*, *:after, *:before
-    box-sizing: border-box
+@import 'animation'
+@import 'base'
 
-html, body
-    height: 100%
-    padding: 0
-    margin: 0
-    overflow: hidden
+.its-me
+  border-bottom: 0.1em solid
+  animation: color-pulse 90s linear infinite
+  padding-bottom: 0.618em
+  margin-bottom: 2.5em
 
-html
-    color: #ffffff
-    animation: color-pulse-1 90s linear infinite
+// h2
+//   font-size: 1.618em
+//   padding-bottom: 0.618em
 
-    font: 1.618vw/1.618em 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
-    font-weight: 400
-    background: #6F382A
-    ::selection
-        background-color: #000000
+// .web-speed
+//   float: left
+//   width: calc(100%/1.618)
+//   height: 100%
+//   padding: 2em 2em
+//   h2
+//     margin-bottom: 1em
+//     display: inline-block
 
-p, h1, h2, h3, h4, h5, h6
-    margin: 0
-    font: inherit
-
-a
-    color: #EF9676
-    animation: color-pulse-2 90s linear infinite
-    cursor: default
-    &:hover
-        background: #000000
-        position: relative
-        left: -8px
-        border-radius: 2px
-        padding: 4px 8px
-    .external-link
-        cursor: pointer !important
-        margin-bottom: 1em
-
-
-.main-href
-    border: 0.618em solid
-    animation: color-pulse-2 90s linear infinite
-    text-decoration: none
-    display: block
-    height: 100%
-    width: calc(100% - 100%/1.618)
-    float: right
-    position: relative
-    padding: 1vh 1vw
-
-h1
-    font-weight: 600
-    position: absolute
-    animation: color-pulse-2 90s linear infinite
-    display: block
-    top: 30%
-    right: calc(50% - 38%)
-    font: 8em/1.618em 'Mirta', 'Georgia', serif
-
-h2
-    font-size: 1.618em
-    padding-bottom: 0.618em
-
-.web-speed
-    float: left
-    width: calc(100%/1.618)
-    height: 100%
-    padding: 2em 2em
-    h2
-        margin-bottom: 1em
-        display: inline-block
-
-ul
-    list-style: none
-    margin: 0
-    display: block
-    width: 100%
-    user-select: none
-    padding: 0
-    li
-        user-select: text
-        display: inline-block
-        margin-bottom: 1em
-
-
-@keyframes color-pulse-1
-    0%, 100%
-        background: #6F382A
-    16.666666667%
-        background: #574615
-    33.333333334%
-        background: #2E4F28
-    50.000000001%
-        background: #023935
-    66.666666668%
-        background: #324961
-    83.333333335%
-        background: #613A51
-
-@keyframes color-pulse-2
-    0%, 100%
-        color: #EF9676
-    16.666666667%
-        color: #D0B33F
-    33.333333334%
-        color: #80C372
-    50.000000001%
-        color: #09C8BE
-    66.666666668%
-        color: #89B8DE
-    83.333333335%
-        color: #DE9BC6
+// ul
+//   list-style: none
+//   margin: 0
+//   display: block
+//   width: 100%
+//   user-select: none
+//   padding: 0
+//   li
+//     user-select: text
+//     display: inline-block
+//     margin-bottom: 1em

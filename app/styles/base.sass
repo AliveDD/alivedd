@@ -1,0 +1,54 @@
+*, *:after, *:before
+  box-sizing: border-box
+
+html, body
+  height: 100%
+  padding: 0
+  margin: 0
+  overflow: hidden
+
+html
+  animation: background-pulse 90s linear infinite
+  font: 2vw/1.618em 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+  font-weight: 400
+  background: #6F382A
+  ::selection
+    background-color: #000000
+
+body
+  animation: color-pulse 90s linear infinite
+  border: 0.618em solid
+  padding: 7vh 5vw
+
+
+// typography
+
+p, h1, h2, h3, h4, h5, h6
+  margin: 0
+  font: inherit
+
+h1
+  font: 3em/1.618em 'Mirta', 'Georgia', 'Times New Roman', serif
+  font-weight: 600
+  margin-bottom: 0.618em
+
+h2
+  color: white
+
+a
+  color: #ffffff
+  animation: color-pulse 90s linear infinite
+  padding: 0.20em 0.5em 0.25em
+  position: relative
+  border-radius: 2px
+  left: -0.5em
+  text-decoration: none
+  &:hover
+    background: black
+
+
+ul
+  list-style: none
+  padding: 0
+  li
+    margin-bottom: 0.1em

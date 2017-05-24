@@ -1,2 +1,2 @@
 
-# [my page](http://alivedd.github.io/alivedd/)
+# [my page](http://alivedd.ru/)

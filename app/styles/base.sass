@@ -1,5 +1,7 @@
-$sans-serif-stack: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
-$serif-stack: 'Mirta', 'Georgia', 'Times New Roman', serif
+$sans-serif-stack: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Helvetica, Arial, sans-serif
+$serif-stack: Mirta, Georgia, Times New Roman, serif
+$monospaced-stack: Droid Sans Mono, Courier, Courier New, Monaco, monospace
+
 
 $phi: 1.618 // φ, golden section
 $mini-phi: 0.618 // inverted golden section
@@ -23,7 +25,7 @@ html, body
 html
   animation: background-pulse 210s linear infinite
   background: #6F382A
-  +font(16px, #{$phi}em, $serif-stack)
+  +font(16px, #{$phi}em, $sans-serif-stack)
   ::selection
     background-color: #000000
 
@@ -41,15 +43,16 @@ p, h1, h2, h3, h4, h5, h6
 
 
 h1
-  +font(3.4854rem, #{$phi}em, $serif-stack)
+  +font(3.4854rem, #{$phi}em, $sans-serif-stack)
   animation: color-pulse 210s linear infinite
   font-weight: 600
   margin-bottom: 0.618em
 
 
 h2
-  +font(2.3236rem, #{$phi}em, $serif-stack)
+  +font(2.3236rem, #{$phi}em, $sans-serif-stack)
   margin-bottom: 0.618em
+  font-weight: 600
 
 a
   +font(1rem, #{$phi}em, $sans-serif-stack)

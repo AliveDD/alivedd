@@ -1,12 +1,1 @@
-
-# [rusume](http://alivedd.github.io/alivedd/)
-
----
-
-
-
-## Timeflow:
-
-- [x] Набросать html-каркас
-
-- [x] Добавить gulp & sass
+# [open site](http://alivedd.ru/)

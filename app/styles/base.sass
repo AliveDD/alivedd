@@ -1,6 +1,6 @@
-$sans-serif-stack: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Helvetica, Arial, sans-serif
-$serif-stack: Mirta, Georgia, Times New Roman, serif
-$monospaced-stack: Droid Sans Mono, Courier, Courier New, Monaco, monospace
+$sans-serif-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', sans-serif
+$serif-stack: 'Mirta', 'Georgia', 'Times New Roman', serif
+$monospaced-stack: 'Droid Sans Mono', 'Courier', 'Courier New', 'Monaco', monospace
 
 
 $phi: 1.618 // φ, golden section
@@ -58,14 +58,32 @@ a
   +font(1rem, #{$phi}em, $sans-serif-stack)
   color: #ffffff
   animation: color-pulse 210s linear infinite
-  padding: 0.20em 0.5em 0.25em
+  padding: 0.2em 0 0.25em 0;
+  box-sizing: border-box
   position: relative
-  border-radius: 2px
-  left: -0.5em
   text-decoration: none
   display: inline-block
+  white-space: nowrap
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    top: auto
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 0
+    background: currentcolor
+    transform: translateX(-100%)
+    transition: transform 0 linear
+
   &:hover
-    background: black
+    color: #ffffff !important
+    &:before
+      transform: translateX(0)
+      transition-duration: 0.35s
+      opacity: 0.38
+      height: 0.1em
 
 
 ul
@@ -74,7 +92,7 @@ ul
   padding: 0
   margin: 0
   li
-    margin-bottom: 0.1em
+    margin-bottom: 0.618em
 
 section
   margin-bottom: 3.2em

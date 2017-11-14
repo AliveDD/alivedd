@@ -7,10 +7,6 @@ var browserSync = require('browser-sync').create();
 // var gzip = require('gulp-gzip');
 // var runSequence = require('run-sequence');
 
-// angular
-// var templateCache = require('gulp-angular-templatecache');
-// var ngAnnotate = require('gulp-ng-annotate');
-
 // scripts
 // var concat = require('gulp-concat');
 // var uglify = require('gulp-uglify');
@@ -66,35 +62,6 @@ var config = {
         //.pipe(gzip({}))
         //.pipe(gulp.dest(config.gzip.dest));
 //});
-
-
-
-//gulp.task('templates', function () {
-    //return gulp.src(config.templates.src)
-        //.pipe(templateCache({
-            //standalone: true
-        //}))
-        //.pipe(gulp.dest(config.templates.dest))
-
-        //.pipe(browserSync.stream({
-            //once: true
-        //}))
-//});
-
-
-
-//gulp.task('scripts', function () {
-    //return gulp.src(config.scripts.src)
-        //.pipe(concat('main.js'))
-        //.pipe(ngAnnotate())
-        //.pipe(uglify())
-        //.pipe(gulp.dest(config.scripts.dest))
-
-        //.pipe(browserSync.stream({
-            //once: true
-        //}))
-//});
-
 
 
 gulp.task('styles', function() {

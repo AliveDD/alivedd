@@ -15,5 +15,8 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1"
-  }
+  },
+  "scripts": {
+    "start": "gulp default"
+  },
 }
